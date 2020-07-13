@@ -1,0 +1,36 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "i18n",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+            "match": "#.*",
+            "name": "comment.line.number-sign.i18n"
+        }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.operator.assignment.i18n",
+				"match": "="
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.i18n",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.i18n",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.i18n"
+}
