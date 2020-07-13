@@ -1,9 +1,3 @@
-# Change Log
+# 1.0.0
 
-All notable changes to the "i18n-language-support" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+i18n Language Support
