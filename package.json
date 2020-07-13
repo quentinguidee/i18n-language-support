@@ -1,25 +1,45 @@
 {
-    "name": "i18n-language-support",
-    "displayName": "i18n Language Support",
-    "description": "",
-    "version": "1.0.0",
-    "engines": {
-        "vscode": "^1.47.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "i18n-language-support",
+  "displayName": "i18n Language Support",
+  "description": "i18n Language Support for Epsilon",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "i18n",
+        "aliases": [
+          "i18n",
+          "i18n"
+        ],
+        "extensions": [
+          ".i18n"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "i18n",
-            "aliases": ["i18n", "i18n"],
-            "extensions": [".i18n"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "i18n",
-            "scopeName": "source.i18n",
-            "path": "./syntaxes/i18n.tmLanguage.json"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "i18n",
+        "scopeName": "source.i18n",
+        "path": "./syntaxes/i18n.tmLanguage.json"
+      }
+    ]
+  },
+  "publisher": "quentinguidee",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quentinguidee/i18n-language-support"
+  },
+  "keywords": [
+    "i18n",
+    "language support",
+    "epsilon"
+  ],
+  "icon": "icon.png"
 }
